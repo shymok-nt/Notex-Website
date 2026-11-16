@@ -63,7 +63,7 @@ export default function Home() {
         <div className="download-inner"><div className="section-kicker">NOTEX FOR WINDOWS</div><h2>Fikirlerin seni<br/><em>bekliyor.</em></h2><p>Notex masaüstü deneyimi Windows için hazırlanıyor. İndirme bağlantısı, doğrulanmış kurulum paketi yayınlandığında burada yer alacak.</p><span className="download-status"><span className="status-dot"/> Windows sürümü — indirme bağlantısı yakında</span></div>
       </section>
 
-      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="/notex-icon.svg" alt="" /><img className="notex-wordmark-image" src="/notex-wordmark.svg" alt="Notex" /></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span><a href="https://github.com/shymok-nt/Notex" target="_blank" rel="noopener noreferrer">GitHub <ArrowRight size={14}/></a></footer>
+      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="/notex-icon.svg" alt="" /><img className="notex-wordmark-image" src="/notex-wordmark.svg" alt="Notex" /></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span></footer>
     </main>
   );
 }
