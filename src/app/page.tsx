@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <div className="nav-wrap">
-          <a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></a>
+          <a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="/notex-icon.svg" alt="" /><img className="notex-wordmark-image" src="/notex-wordmark.svg" alt="Notex" /></a>
           <nav className="desktop-nav" aria-label="Ana menü">
             <a href="#ozellikler">Özellikler</a>
             <a href="#deneyim">Deneyim</a>
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="showcase" id="deneyim" aria-label="Notex ana ekranını temel alan tanıtım arayüzü">
           <div className="showcase-window notex-preview">
             <div className="preview-header">
-              <div className="preview-brand"><img src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></div>
+              <div className="preview-brand"><img className="preview-brand-icon" src="/notex-icon.svg" alt="" /><img className="preview-wordmark-image" src="/notex-wordmark.svg" alt="Notex" /></div>
               <div className="preview-tools"><span><FileUp size={16}/></span><span><List size={16}/></span><span className="preview-select">Seç</span><span><SlidersHorizontal size={16}/></span></div>
             </div>
             <div className="preview-content">
@@ -63,7 +63,7 @@ export default function Home() {
         <div className="download-inner"><div className="section-kicker">NOTEX FOR WINDOWS</div><h2>Fikirlerin seni<br/><em>bekliyor.</em></h2><p>Notex masaüstü deneyimi Windows için hazırlanıyor. İndirme bağlantısı, doğrulanmış kurulum paketi yayınlandığında burada yer alacak.</p><span className="download-status"><span className="status-dot"/> Windows sürümü — indirme bağlantısı yakında</span></div>
       </section>
 
-      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span><a href="https://github.com/shymok-nt/Notex" target="_blank" rel="noopener noreferrer">GitHub <ArrowRight size={14}/></a></footer>
+      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="/notex-icon.svg" alt="" /><img className="notex-wordmark-image" src="/notex-wordmark.svg" alt="Notex" /></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span><a href="https://github.com/shymok-nt/Notex" target="_blank" rel="noopener noreferrer">GitHub <ArrowRight size={14}/></a></footer>
     </main>
   );
 }
