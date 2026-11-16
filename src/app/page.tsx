@@ -24,7 +24,7 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-glow" aria-hidden="true" />
         <div className="hero-content">
-          <div className="eyebrow"><span className="eyebrow-dot" /> Windows için yeni bir not alma deneyimi</div>
+          
           <h1 id="hero-title">Düşüncelerine<br/><em>alan aç.</em></h1>
           <p className="hero-copy">Fikirlerin, notların ve çizimlerin için daha sakin bir yer. Dikkatini dağıtan hiçbir şey olmadan, sadece sen ve düşüncelerin.</p>
           <div className="hero-actions">
