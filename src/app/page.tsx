@@ -1,4 +1,4 @@
-import { ArrowDownToLine, ArrowRight, Check, FileText, Layers3, LockKeyhole, PenLine, Sparkles } from "lucide-react";
+import { ArrowDownToLine, ArrowRight, Check, FileText, LockKeyhole, PenLine, Home as HomeIcon, BookOpen, Search, SlidersHorizontal, List, FileUp, ChevronRight } from "lucide-react";
 
 const features = [
   { icon: PenLine, title: "Özgürce yaz.", text: "Kalemle not al, çiz, fikirlerini kağıt hissiyle düzenle." },
@@ -11,7 +11,7 @@ export default function Home() {
     <main>
       <header className="site-header">
         <div className="nav-wrap">
-          <a className="brand" href="#" aria-label="Notex ana sayfa"><span className="brand-mark">n<span>.</span></span><span>notex</span></a>
+          <a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></a>
           <nav className="desktop-nav" aria-label="Ana menü">
             <a href="#ozellikler">Özellikler</a>
             <a href="#deneyim">Deneyim</a>
@@ -33,34 +33,22 @@ export default function Home() {
           </div>
           <p className="hero-note"><Check size={14}/> Hesap gerektirmez <span>·</span> Yerel çalışma</p>
         </div>
-        <div className="showcase" id="deneyim" aria-label="Notex çalışma alanını temsil eden tasarım illüstrasyonu">
-          <div className="showcase-window">
-            <div className="window-top"><div className="window-dots"><i/><i/><i/></div><span>Notex</span><div className="window-top-right">Çalışma alanın</div></div>
-            <div className="window-body">
-              <aside className="mock-sidebar">
-                <div className="sidebar-logo">n<span>.</span></div>
-                <div className="sidebar-label">KÜTÜPHANE</div>
-                <div className="sidebar-link selected"><Layers3 size={15}/> Defterler</div>
-                <div className="sidebar-link"><FileText size={15}/> Notlar</div>
-                <div className="sidebar-divider"/>
-                <div className="sidebar-label">ÇALIŞMA ALANI</div>
-                <div className="sidebar-link"><Sparkles size={15}/> Fikirlerim</div>
-                <div className="sidebar-foot">Düşüncelerine alan aç.</div>
-              </aside>
-              <div className="mock-main">
-                <div className="mock-breadcrumb">Çalışma alanı <span>/</span> Not defterim</div>
-                <div className="mock-paper">
-                  <div className="paper-date">NOT DEFTERİ · 01</div>
-                  <div className="paper-title">Bugün aklımda.</div>
-                  <div className="paper-rule"/>
-                  <div className="paper-script">Her büyük fikir,<br/>küçük bir notla başlar.</div>
-                  <div className="paper-scribble" aria-hidden="true"><svg viewBox="0 0 330 75" fill="none"><path d="M5 50 C40 18 58 71 95 39 S155 9 180 38 S244 70 278 28 S316 21 325 32" stroke="#8E9DBB" strokeWidth="2.4" strokeLinecap="round"/><path d="M260 48 L282 28 L287 50" stroke="#8E9DBB" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/></svg></div>
-                  <div className="paper-sticky"><span>Bir fikir<br/>daha ✳</span></div>
-                </div>
-              </div>
+        <div className="showcase" id="deneyim" aria-label="Notex ana ekranını temel alan tanıtım arayüzü">
+          <div className="showcase-window notex-preview">
+            <div className="preview-header">
+              <div className="preview-brand"><img src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></div>
+              <div className="preview-tools"><span><FileUp size={16}/></span><span><List size={16}/></span><span className="preview-select">Seç</span><span><SlidersHorizontal size={16}/></span></div>
             </div>
+            <div className="preview-content">
+              <h3>Ana sayfa</h3><p className="preview-subtitle">Notların ve defterlerin, tek bir yerde.</p>
+              <div className="preview-section-title"><strong>Defterlerim</strong><span>Tümü <ChevronRight size={12}/></span></div>
+              <div className="preview-notebooks">{["rose","orange","teal","blue"].map((color,i)=><div className="preview-notebook" key={color}><div className={`preview-cover ${color}`}><span/></div><strong>Yeni defter</strong><small>1 sayfa</small></div>)}</div>
+              <div className="preview-section-title preview-recent-title"><strong>Son açılan defterler</strong></div>
+              <div className="preview-recent">{["rose","orange","teal","blue"].map(color=><div className="preview-recent-row" key={color}><div className={`preview-cover preview-cover-small ${color}`}><span/></div><div><strong>Yeni defter</strong><small>1 sayfa · Son açılma Bugün 23:12</small></div><ChevronRight size={15}/></div>)}</div>
+            </div>
+            <div className="preview-bottom"><span className="active"><HomeIcon size={16}/>Ana sayfa</span><span><BookOpen size={16}/>Defterler</span><span><Search size={16}/>Ara</span></div>
           </div>
-          <p className="showcase-caption">Notex deneyiminden ilham alan temsili görsel. Gerçek uygulama ekran görüntüsü değildir.</p>
+          <p className="showcase-caption">Notex arayüzünü temel alan temsili tanıtım. Defter içerikleri örnektir.</p>
         </div>
       </section>
 
@@ -75,7 +63,7 @@ export default function Home() {
         <div className="download-inner"><div className="section-kicker">NOTEX FOR WINDOWS</div><h2>Fikirlerin seni<br/><em>bekliyor.</em></h2><p>Notex masaüstü deneyimi Windows için hazırlanıyor. İndirme bağlantısı, doğrulanmış kurulum paketi yayınlandığında burada yer alacak.</p><span className="download-status"><span className="status-dot"/> Windows sürümü — indirme bağlantısı yakında</span></div>
       </section>
 
-      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><span className="brand-mark">n<span>.</span></span><span>notex</span></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span><a href="https://github.com/shymok-nt/Notex" target="_blank" rel="noopener noreferrer">GitHub <ArrowRight size={14}/></a></footer>
+      <footer className="footer section-wrap"><a className="brand" href="#" aria-label="Notex ana sayfa"><img className="notex-brand-icon" src="https://raw.githubusercontent.com/shymok-nt/Notex/main/assets/images/icon.png" alt="" /><span className="notex-wordmark">Note<span>x</span></span></a><span>© {new Date().getFullYear()} Notex. Düşüncelerine alan aç.</span><a href="https://github.com/shymok-nt/Notex" target="_blank" rel="noopener noreferrer">GitHub <ArrowRight size={14}/></a></footer>
     </main>
   );
 }
