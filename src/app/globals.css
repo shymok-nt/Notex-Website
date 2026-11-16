@@ -70,3 +70,46 @@ h1,h2,h3,p{margin-top:0}
 .footer{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:32px;padding-bottom:32px}.footer>span{font-size:11px;color:#a1a5af}.footer>a:last-child{display:flex;align-items:center;gap:7px;color:#777d89;font-size:12px}
 @media(max-width:720px){.nav-wrap{height:68px;padding:0 20px}.desktop-nav{display:none}.nav-cta{padding:10px 12px}.hero{padding:78px 18px 0}.hero h1{letter-spacing:-.075em;margin:28px 0 20px}.hero-copy{font-size:15px}.showcase{margin-top:68px}.window-body{height:370px}.mock-sidebar{width:112px;padding:18px 8px}.sidebar-logo{margin:0 0 30px 7px}.sidebar-label{font-size:7px;margin:14px 5px 10px}.sidebar-link{font-size:9px;gap:6px;padding:10px 6px}.sidebar-link svg{width:12px}.sidebar-foot{display:none}.mock-main{padding:16px 13px}.mock-paper{height:400px;padding:29px 20px}.paper-title{font-size:24px}.paper-script{font-size:17px}.paper-sticky{width:80px;height:74px;padding:13px 10px;font-size:12px;right:12px;bottom:35px}.window-top-right{display:none}.showcase-caption{text-align:center}.features{padding-top:100px;padding-bottom:95px}.feature-grid{grid-template-columns:1fr;margin-top:35px}.feature-card{min-height:unset}.footer{flex-wrap:wrap}.footer>span{order:3;width:100%;text-align:center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* Actual Notex branding and faithful home-screen preview */
+.notex-brand-icon{width:35px;height:35px;object-fit:contain;border-radius:8px}
+.notex-wordmark{font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:29px;letter-spacing:-1.4px;color:#101d3a}
+.notex-wordmark span{color:#1599eb}
+.notex-preview{border-radius:15px 15px 0 0;background:#f5f6fb;color:#172041}
+.preview-header{height:48px;background:#f5f6fb;border-bottom:1px solid #e2e5ee;display:flex;align-items:center;justify-content:space-between;padding:0 14px}
+.preview-brand{display:flex;align-items:center;gap:13px}
+.preview-brand img{width:34px;height:34px;object-fit:contain}
+.preview-brand .notex-wordmark{font-size:25px}
+.preview-tools{display:flex;align-items:center;gap:10px;color:#101a3b}
+.preview-tools>span{display:grid;place-items:center;min-width:27px;height:27px;border-radius:50%;background:white}
+.preview-tools .preview-select{background:transparent;font-size:10px;padding:0 5px}
+.preview-content{padding:23px 24px 34px;text-align:left;min-height:465px}
+.preview-content h3{font-size:25px;letter-spacing:-.6px;margin:0 0 5px}
+.preview-subtitle{font-size:11px;color:#7d86a4;margin:0}
+.preview-section-title{display:flex;align-items:center;justify-content:space-between;margin-top:27px;margin-bottom:15px;font-size:17px}
+.preview-section-title span{display:flex;align-items:center;color:#4167ff;font-size:11px}
+.preview-notebooks{display:flex;gap:13px}
+.preview-notebook{width:88px;flex-shrink:0;display:flex;flex-direction:column;text-align:left}
+.preview-cover{width:88px;height:118px;border-radius:5px;position:relative;box-shadow:inset 4px 0 5px #0002,inset 0 0 12px #fff3,0 2px 4px #0002;overflow:hidden}
+.preview-cover:before{content:"";position:absolute;left:7px;top:0;bottom:0;border-left:1px dashed #ffffff40}
+.preview-cover span{position:absolute;left:25%;right:18%;top:35%;height:26%;background:#ffffff0d;border:1px solid #ffffff0c}
+.preview-cover.rose{background:linear-gradient(125deg,#ce8da9,#bd7394)}
+.preview-cover.orange{background:linear-gradient(125deg,#efa05d,#cf7b2d)}
+.preview-cover.teal{background:linear-gradient(125deg,#36a9a3,#19817d)}
+.preview-cover.blue{background:linear-gradient(125deg,#5268dc,#3246bd)}
+.preview-notebook strong{font-size:10px;margin-top:9px}
+.preview-notebook small{font-size:9px;color:#818ba8;margin-top:2px}
+.preview-recent-title{margin-top:21px;margin-bottom:10px}
+.preview-recent{border-radius:13px;background:#fff;padding:4px 12px;box-shadow:0 2px 10px #202b4a0a}
+.preview-recent-row{display:flex;align-items:center;gap:11px;height:51px;border-bottom:1px solid #e6e9f2}
+.preview-recent-row:last-child{border-bottom:0}
+.preview-cover.preview-cover-small{width:33px;height:42px;border-radius:3px;flex-shrink:0}
+.preview-recent-row>div:nth-child(2){display:flex;flex-direction:column;gap:4px;flex:1}
+.preview-recent-row strong{font-size:10px}
+.preview-recent-row small{font-size:9px;color:#8790ad}
+.preview-recent-row>svg{color:#9ba4be}
+.preview-bottom{height:41px;border-top:1px solid #e2e5ee;background:#f5f6fb;display:flex;justify-content:space-around;align-items:center}
+.preview-bottom span{display:flex;align-items:center;gap:8px;font-size:10px;color:#9aa2bf}
+.preview-bottom span.active{color:#365cff}
+@media(max-width:720px){.notex-brand-icon{width:30px;height:30px}.brand .notex-wordmark{font-size:25px}.preview-header{height:39px;padding:0 8px}.preview-brand img{width:25px;height:25px}.preview-brand .notex-wordmark{font-size:19px}.preview-tools{gap:4px}.preview-tools>span{min-width:22px;height:22px}.preview-tools svg{width:12px}.preview-content{padding:14px 13px 20px;min-height:370px}.preview-content h3{font-size:18px}.preview-subtitle{font-size:9px}.preview-section-title{font-size:12px;margin-top:18px;margin-bottom:10px}.preview-notebooks{gap:7px}.preview-notebook{width:calc((100% - 21px)/4)}.preview-cover{width:100%;height:auto;aspect-ratio:88/118}.preview-notebook strong{font-size:8px}.preview-notebook small{font-size:7px}.preview-recent-title{margin-top:16px}.preview-recent{padding:3px 8px}.preview-recent-row{height:43px;gap:7px}.preview-cover.preview-cover-small{width:25px;height:32px}.preview-recent-row strong{font-size:8px}.preview-recent-row small{font-size:7px}.preview-bottom{height:34px}.preview-bottom span{font-size:8px;gap:4px}.preview-bottom svg{width:12px}}
