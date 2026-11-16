@@ -113,3 +113,12 @@ h1,h2,h3,p{margin-top:0}
 .preview-bottom span{display:flex;align-items:center;gap:8px;font-size:10px;color:#9aa2bf}
 .preview-bottom span.active{color:#365cff}
 @media(max-width:720px){.notex-brand-icon{width:30px;height:30px}.brand .notex-wordmark{font-size:25px}.preview-header{height:39px;padding:0 8px}.preview-brand img{width:25px;height:25px}.preview-brand .notex-wordmark{font-size:19px}.preview-tools{gap:4px}.preview-tools>span{min-width:22px;height:22px}.preview-tools svg{width:12px}.preview-content{padding:14px 13px 20px;min-height:370px}.preview-content h3{font-size:18px}.preview-subtitle{font-size:9px}.preview-section-title{font-size:12px;margin-top:18px;margin-bottom:10px}.preview-notebooks{gap:7px}.preview-notebook{width:calc((100% - 21px)/4)}.preview-cover{width:100%;height:auto;aspect-ratio:88/118}.preview-notebook strong{font-size:8px}.preview-notebook small{font-size:7px}.preview-recent-title{margin-top:16px}.preview-recent{padding:3px 8px}.preview-recent-row{height:43px;gap:7px}.preview-cover.preview-cover-small{width:25px;height:32px}.preview-recent-row strong{font-size:8px}.preview-recent-row small{font-size:7px}.preview-bottom{height:34px}.preview-bottom span{font-size:8px;gap:4px}.preview-bottom svg{width:12px}}
+
+/* Transparent supplied SVG assets; enlarge icon without enlarging navigation height excessively */
+.brand{gap:0}
+.brand .notex-brand-icon{width:68px;height:68px;object-fit:contain;border-radius:0;flex-shrink:0;margin:-8px -7px -8px -10px}
+.brand .notex-wordmark-image{display:block;width:112px;height:48px;object-fit:contain}
+.preview-brand{gap:0}
+.preview-brand .preview-brand-icon{width:48px;height:48px;object-fit:contain;margin:-5px -4px -5px -7px}
+.preview-brand .preview-wordmark-image{width:98px;height:40px;object-fit:contain}
+@media(max-width:720px){.brand .notex-brand-icon{width:58px;height:58px;margin:-7px -6px -7px -9px}.brand .notex-wordmark-image{width:95px;height:42px}.preview-brand .preview-brand-icon{width:39px;height:39px;margin:-4px -4px -4px -6px}.preview-brand .preview-wordmark-image{width:75px;height:32px}}
