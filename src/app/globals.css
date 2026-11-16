@@ -122,3 +122,21 @@ h1,h2,h3,p{margin-top:0}
 .preview-brand .preview-brand-icon{width:48px;height:48px;object-fit:contain;margin:-5px -4px -5px -7px}
 .preview-brand .preview-wordmark-image{width:98px;height:40px;object-fit:contain}
 @media(max-width:720px){.brand .notex-brand-icon{width:58px;height:58px;margin:-7px -6px -7px -9px}.brand .notex-wordmark-image{width:95px;height:42px}.preview-brand .preview-brand-icon{width:39px;height:39px;margin:-4px -4px -4px -6px}.preview-brand .preview-wordmark-image{width:75px;height:32px}}
+
+/* Brand-aligned, restrained violet → blue → cyan atmospheric gradient */
+body{
+  background:
+    radial-gradient(ellipse 62% 30% at 8% 7%,rgba(91,70,232,.095),transparent 76%),
+    radial-gradient(ellipse 60% 34% at 94% 25%,rgba(34,184,207,.095),transparent 75%),
+    radial-gradient(ellipse 75% 38% at 48% 65%,rgba(43,109,232,.065),transparent 78%),
+    linear-gradient(145deg,#fcfbff 0%,#f6f8ff 47%,#f4fcfd 100%);
+  background-attachment:fixed;
+}
+.site-header{background:rgba(252,252,255,.79);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.hero-glow{background:radial-gradient(ellipse at 35% 40%,rgba(91,70,232,.13),transparent 60%),radial-gradient(ellipse at 70% 55%,rgba(34,184,207,.12),transparent 62%)}
+.hero h1 em,.download-section h2 em{background:linear-gradient(115deg,#5b46e8 5%,#2b6de8 55%,#22b8cf 100%);background-clip:text;color:transparent}
+.section-kicker{color:#5264d7}
+.feature-card{background:rgba(255,255,255,.66);border-color:rgba(102,123,200,.12);backdrop-filter:blur(8px)}
+.download-section{background:linear-gradient(115deg,rgba(91,70,232,.085),rgba(43,109,232,.065) 52%,rgba(34,184,207,.09))}
+.footer{justify-content:space-between}
+@media(prefers-reduced-transparency:reduce){.site-header,.feature-card{backdrop-filter:none;-webkit-backdrop-filter:none}}
